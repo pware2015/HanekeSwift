@@ -75,10 +75,10 @@ public class DiskCache {
     }
 
     public func removeData(key: String) {
-        dispatch_async(cacheQueue, {
+        //dispatch_async(cacheQueue, {
             let path = self.pathForKey(key)
             self.removeFileAtPath(path)
-        })
+        //})
     }
     
     public func removeAllData() {
